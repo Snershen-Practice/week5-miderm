@@ -48,15 +48,15 @@
           </div>
           <div class="addTicket-form-group">
             <label for="ticketPrice">套票金額</label>
-            <input type="text" id="ticketPrice" placeholder="請填寫套票金額" />
+            <input type="number" id="ticketPrice" min="0" placeholder="請填寫套票金額" />
           </div>
           <div class="addTicket-form-group">
             <label for="ticketNum">套票組數</label>
-            <input type="text" id="ticketNum" placeholder="請填寫套票組數" />
+            <input type="number" id="ticketNum" min="0" placeholder="請填寫套票組數" />
           </div>
           <div class="addTicket-form-group">
             <label for="ticketRate">套票星級</label>
-            <input type="text" id="ticketRate" placeholder="請填寫套票星級" />
+            <input type="number" id="ticketRate" max="10" min="1" placeholder="請填寫套票星級" />
           </div>
           <div class="addTicket-form-group">
             <label for="ticketDescription">套票描述</label>
@@ -70,7 +70,7 @@
       <div class="container">
         <div class="search-group">
           <select name="location" id="searchMenu">
-            <option value="請選擇景點地區">請選擇景點地區</option>
+            <option value="全部地區">全部地區</option>
             <option value="台北">台北</option>
             <option value="台中">台中</option>
             <option value="高雄">高雄</option>

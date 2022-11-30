@@ -79,7 +79,6 @@ searchMenu.addEventListener('change', (e) => {
     if (item.area == e.target.value) {
       obj.push(item);
       searchNum.textContent = `本次搜尋共 ${obj.length} 筆資料`;
-      console.log(e.target.value);
       let ticketContent = '';
       ticketContent += `<li class="ticketCard">
           <a href="#" class="ticketCard-img">
@@ -105,7 +104,7 @@ searchMenu.addEventListener('change', (e) => {
           </div>
         </li>`;
       ticketCardArea.innerHTML = ticketContent;
-    } else if (e.target.value === '請選擇景點地區') {
+    } else if (e.target.value === '全部地區') {
       renderContent();
     }
   });
